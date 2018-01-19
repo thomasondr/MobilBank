@@ -15,6 +15,8 @@
 		235A13C220101834009AC6CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 235A13C020101834009AC6CF /* LaunchScreen.storyboard */; };
 		237A1ECD20114DF000B3C06D /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237A1ECC20114DF000B3C06D /* MenuTableViewCell.swift */; };
 		237A1ECF20114E0F00B3C06D /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237A1ECE20114E0F00B3C06D /* MenuViewController.swift */; };
+		237A1ED120117B0E00B3C06D /* ATMSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237A1ED020117B0E00B3C06D /* ATMSearchViewController.swift */; };
+		237A1ED420117E6800B3C06D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 237A1ED320117E6800B3C06D /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		235A13C320101834009AC6CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		237A1ECC20114DF000B3C06D /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
 		237A1ECE20114E0F00B3C06D /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		237A1ED020117B0E00B3C06D /* ATMSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATMSearchViewController.swift; sourceTree = "<group>"; };
+		237A1ED320117E6800B3C06D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				237A1ED420117E6800B3C06D /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +51,7 @@
 			children = (
 				235A13B320101834009AC6CF /* MobileBank */,
 				235A13B220101834009AC6CF /* Products */,
+				237A1ED220117E6700B3C06D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,8 +75,17 @@
 				235A13BB20101834009AC6CF /* MobileBank.xcdatamodeld */,
 				237A1ECC20114DF000B3C06D /* MenuTableViewCell.swift */,
 				237A1ECE20114E0F00B3C06D /* MenuViewController.swift */,
+				237A1ED020117B0E00B3C06D /* ATMSearchViewController.swift */,
 			);
 			path = MobileBank;
+			sourceTree = "<group>";
+		};
+		237A1ED220117E6700B3C06D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				237A1ED320117E6800B3C06D /* CoreLocation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +165,7 @@
 				235A13B520101834009AC6CF /* AppDelegate.swift in Sources */,
 				237A1ECD20114DF000B3C06D /* MenuTableViewCell.swift in Sources */,
 				235A13BD20101834009AC6CF /* MobileBank.xcdatamodeld in Sources */,
+				237A1ED120117B0E00B3C06D /* ATMSearchViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
