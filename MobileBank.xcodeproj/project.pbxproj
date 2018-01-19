@@ -8,22 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		235A13B520101834009AC6CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235A13B420101834009AC6CF /* AppDelegate.swift */; };
-		235A13B720101834009AC6CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235A13B620101834009AC6CF /* ViewController.swift */; };
+		235A13B720101834009AC6CF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235A13B620101834009AC6CF /* LoginViewController.swift */; };
 		235A13BA20101834009AC6CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 235A13B820101834009AC6CF /* Main.storyboard */; };
 		235A13BD20101834009AC6CF /* MobileBank.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 235A13BB20101834009AC6CF /* MobileBank.xcdatamodeld */; };
 		235A13BF20101834009AC6CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 235A13BE20101834009AC6CF /* Assets.xcassets */; };
 		235A13C220101834009AC6CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 235A13C020101834009AC6CF /* LaunchScreen.storyboard */; };
+		237A1ECD20114DF000B3C06D /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237A1ECC20114DF000B3C06D /* MenuTableViewCell.swift */; };
+		237A1ECF20114E0F00B3C06D /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237A1ECE20114E0F00B3C06D /* MenuViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		235A13B120101834009AC6CF /* MobileBank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileBank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		235A13B420101834009AC6CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		235A13B620101834009AC6CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		235A13B620101834009AC6CF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		235A13B920101834009AC6CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		235A13BC20101834009AC6CF /* MobileBank.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MobileBank.xcdatamodel; sourceTree = "<group>"; };
 		235A13BE20101834009AC6CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		235A13C120101834009AC6CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		235A13C320101834009AC6CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		237A1ECC20114DF000B3C06D /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
+		237A1ECE20114E0F00B3C06D /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,12 +61,14 @@
 			isa = PBXGroup;
 			children = (
 				235A13B420101834009AC6CF /* AppDelegate.swift */,
-				235A13B620101834009AC6CF /* ViewController.swift */,
+				235A13B620101834009AC6CF /* LoginViewController.swift */,
 				235A13B820101834009AC6CF /* Main.storyboard */,
 				235A13BE20101834009AC6CF /* Assets.xcassets */,
 				235A13C020101834009AC6CF /* LaunchScreen.storyboard */,
 				235A13C320101834009AC6CF /* Info.plist */,
 				235A13BB20101834009AC6CF /* MobileBank.xcdatamodeld */,
+				237A1ECC20114DF000B3C06D /* MenuTableViewCell.swift */,
+				237A1ECE20114E0F00B3C06D /* MenuViewController.swift */,
 			);
 			path = MobileBank;
 			sourceTree = "<group>";
@@ -139,8 +145,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				235A13B720101834009AC6CF /* ViewController.swift in Sources */,
+				235A13B720101834009AC6CF /* LoginViewController.swift in Sources */,
+				237A1ECF20114E0F00B3C06D /* MenuViewController.swift in Sources */,
 				235A13B520101834009AC6CF /* AppDelegate.swift in Sources */,
+				237A1ECD20114DF000B3C06D /* MenuTableViewCell.swift in Sources */,
 				235A13BD20101834009AC6CF /* MobileBank.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -279,7 +287,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 38RBJQ3526;
 				INFOPLIST_FILE = MobileBank/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.MobileBank;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -293,7 +303,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 38RBJQ3526;
 				INFOPLIST_FILE = MobileBank/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.MobileBank;
 				PRODUCT_NAME = "$(TARGET_NAME)";
