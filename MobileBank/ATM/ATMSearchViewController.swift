@@ -11,8 +11,12 @@ import CoreLocation
 
 class ATMSearchViewController: UIViewController, CLLocationManagerDelegate {
 
+    @IBOutlet weak var distance: UILabel!
     @IBOutlet weak var mapView: MKMapView!
+    
     let manager = CLLocationManager()
+    let dummyNearestATMDistance:Float = 35.65
+    let dummyUnit = "m"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,7 +25,11 @@ class ATMSearchViewController: UIViewController, CLLocationManagerDelegate {
         manager.desiredAccuracy = kCLLocationAccuracyBest
         manager.requestWhenInUseAuthorization()
         manager.startUpdatingLocation()
-
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        updateNearestDistance()
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
@@ -32,6 +40,11 @@ class ATMSearchViewController: UIViewController, CLLocationManagerDelegate {
         let region:MKCoordinateRegion = MKCoordinateRegionMake(myLocation, span)
         mapView.setRegion(region, animated: true)
         mapView.showsUserLocation = true
+    }
+    
+    func updateNearestDistance() {
+        let distanceValue:String = dummyNearestATMDistance.description + " " + dummyUnit
+        distance.text = distanceValue
     }
     
     

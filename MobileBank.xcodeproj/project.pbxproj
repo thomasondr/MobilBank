@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2343374B2011CA4A008A539C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2343374A2011CA4A008A539C /* HomeViewController.swift */; };
+		2343374D201380E3008A539C /* TransactionsWidgetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2343374C201380E3008A539C /* TransactionsWidgetTableViewCell.swift */; };
+		234337502013B691008A539C /* ActiovationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2343374F2013B691008A539C /* ActiovationViewController.swift */; };
+		234337522013E758008A539C /* TransactionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234337512013E758008A539C /* TransactionsViewController.swift */; };
+		234337542013E762008A539C /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234337532013E762008A539C /* CardsViewController.swift */; };
+		234337562013E773008A539C /* UserDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234337552013E773008A539C /* UserDetailsViewController.swift */; };
+		234337582013E783008A539C /* AccountsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234337572013E783008A539C /* AccountsViewController.swift */; };
+		2343375A2013E78D008A539C /* PaymentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234337592013E78D008A539C /* PaymentsViewController.swift */; };
+		2343375C2013E85D008A539C /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2343375B2013E85D008A539C /* ContactViewController.swift */; };
 		235A13B520101834009AC6CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235A13B420101834009AC6CF /* AppDelegate.swift */; };
 		235A13B720101834009AC6CF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235A13B620101834009AC6CF /* LoginViewController.swift */; };
 		235A13BA20101834009AC6CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 235A13B820101834009AC6CF /* Main.storyboard */; };
@@ -22,6 +31,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2343374A2011CA4A008A539C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		2343374C201380E3008A539C /* TransactionsWidgetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsWidgetTableViewCell.swift; sourceTree = "<group>"; };
+		2343374F2013B691008A539C /* ActiovationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiovationViewController.swift; sourceTree = "<group>"; };
+		234337512013E758008A539C /* TransactionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsViewController.swift; sourceTree = "<group>"; };
+		234337532013E762008A539C /* CardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
+		234337552013E773008A539C /* UserDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsViewController.swift; sourceTree = "<group>"; };
+		234337572013E783008A539C /* AccountsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsViewController.swift; sourceTree = "<group>"; };
+		234337592013E78D008A539C /* PaymentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentsViewController.swift; sourceTree = "<group>"; };
+		2343375B2013E85D008A539C /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		235A13B120101834009AC6CF /* MobileBank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileBank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		235A13B420101834009AC6CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		235A13B620101834009AC6CF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -50,6 +68,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2343374E2013B664008A539C /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				235A13B620101834009AC6CF /* LoginViewController.swift */,
+				2343374F2013B691008A539C /* ActiovationViewController.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
 		235A13A820101834009AC6CF = {
 			isa = PBXGroup;
 			children = (
@@ -70,11 +97,18 @@
 		235A13B320101834009AC6CF /* MobileBank */ = {
 			isa = PBXGroup;
 			children = (
+				2343374E2013B664008A539C /* Authentication */,
+				237A1EE220118EA600B3C06D /* Contact */,
+				237A1EE120118E9400B3C06D /* Transactions */,
+				237A1EE020118E5B00B3C06D /* Cards */,
+				237A1EDF20118E5000B3C06D /* Home */,
+				237A1EDE20118E4500B3C06D /* User */,
+				237A1EDD20118E3900B3C06D /* Accounts */,
+				237A1EDC20118E2F00B3C06D /* Payments */,
 				237A1ED72011834500B3C06D /* Currencies */,
 				237A1ED62011833B00B3C06D /* ATM */,
 				237A1ED52011832800B3C06D /* Menu */,
 				235A13B420101834009AC6CF /* AppDelegate.swift */,
-				235A13B620101834009AC6CF /* LoginViewController.swift */,
 				235A13B820101834009AC6CF /* Main.storyboard */,
 				235A13BE20101834009AC6CF /* Assets.xcassets */,
 				235A13C020101834009AC6CF /* LaunchScreen.storyboard */,
@@ -116,6 +150,63 @@
 				237A1EDA201187F600B3C06D /* CurrencyCalculatorViewController.swift */,
 			);
 			path = Currencies;
+			sourceTree = "<group>";
+		};
+		237A1EDC20118E2F00B3C06D /* Payments */ = {
+			isa = PBXGroup;
+			children = (
+				234337592013E78D008A539C /* PaymentsViewController.swift */,
+			);
+			path = Payments;
+			sourceTree = "<group>";
+		};
+		237A1EDD20118E3900B3C06D /* Accounts */ = {
+			isa = PBXGroup;
+			children = (
+				234337572013E783008A539C /* AccountsViewController.swift */,
+			);
+			path = Accounts;
+			sourceTree = "<group>";
+		};
+		237A1EDE20118E4500B3C06D /* User */ = {
+			isa = PBXGroup;
+			children = (
+				234337552013E773008A539C /* UserDetailsViewController.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		237A1EDF20118E5000B3C06D /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				2343374A2011CA4A008A539C /* HomeViewController.swift */,
+				2343374C201380E3008A539C /* TransactionsWidgetTableViewCell.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		237A1EE020118E5B00B3C06D /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+				234337532013E762008A539C /* CardsViewController.swift */,
+			);
+			path = Cards;
+			sourceTree = "<group>";
+		};
+		237A1EE120118E9400B3C06D /* Transactions */ = {
+			isa = PBXGroup;
+			children = (
+				234337512013E758008A539C /* TransactionsViewController.swift */,
+			);
+			path = Transactions;
+			sourceTree = "<group>";
+		};
+		237A1EE220118EA600B3C06D /* Contact */ = {
+			isa = PBXGroup;
+			children = (
+				2343375B2013E85D008A539C /* ContactViewController.swift */,
+			);
+			path = Contact;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,11 +283,20 @@
 			files = (
 				235A13B720101834009AC6CF /* LoginViewController.swift in Sources */,
 				237A1ED92011836600B3C06D /* CurrencyListViewController.swift in Sources */,
+				234337522013E758008A539C /* TransactionsViewController.swift in Sources */,
+				2343375C2013E85D008A539C /* ContactViewController.swift in Sources */,
+				2343374D201380E3008A539C /* TransactionsWidgetTableViewCell.swift in Sources */,
+				234337562013E773008A539C /* UserDetailsViewController.swift in Sources */,
 				237A1ECF20114E0F00B3C06D /* MenuViewController.swift in Sources */,
 				235A13B520101834009AC6CF /* AppDelegate.swift in Sources */,
+				2343375A2013E78D008A539C /* PaymentsViewController.swift in Sources */,
+				234337582013E783008A539C /* AccountsViewController.swift in Sources */,
 				237A1ECD20114DF000B3C06D /* MenuTableViewCell.swift in Sources */,
+				234337542013E762008A539C /* CardsViewController.swift in Sources */,
+				2343374B2011CA4A008A539C /* HomeViewController.swift in Sources */,
 				237A1EDB201187F600B3C06D /* CurrencyCalculatorViewController.swift in Sources */,
 				235A13BD20101834009AC6CF /* MobileBank.xcdatamodeld in Sources */,
+				234337502013B691008A539C /* ActiovationViewController.swift in Sources */,
 				237A1ED120117B0E00B3C06D /* ATMSearchViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
