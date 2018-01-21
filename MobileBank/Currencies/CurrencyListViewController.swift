@@ -2,8 +2,7 @@
 //  CurrencyListViewController.swift
 //  MobileBank
 //
-//  Created by Tamas Ondresik on 2018. 01. 19..
-//  Copyright © 2018. Tamas Ondresik. All rights reserved.
+//  Created by Tamas Ondresik 
 //
 
 import UIKit
@@ -21,6 +20,7 @@ class CurrencyListViewController: UIViewController,UITableViewDelegate,UITableVi
         
         curencyListTableView.delegate = self
         curencyListTableView.dataSource = self
+        curencyListTableView.tableFooterView = UIView(frame: CGRect.zero)
     }
 
     override func viewWillAppear(_ animated: Bool) {

@@ -14,7 +14,7 @@ struct KeychainConfiguration {
     static let accessGroup: String? = nil
 }
 
-class EnterPinViewController: UIViewController {
+class EnterPinViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var pinInput: UITextField!
     
@@ -23,6 +23,8 @@ class EnterPinViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        pinInput.delegate = self
     }
     
     @IBAction func storePIN(_ sender: Any) {
@@ -61,5 +63,9 @@ class EnterPinViewController: UIViewController {
         }
     }
     
-    
+    public func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        let allowedCharacters = CharacterSet.decimalDigits
+        let characterSet = CharacterSet(charactersIn: string)
+        return allowedCharacters.isSuperset(of: characterSet)
+    }
 }

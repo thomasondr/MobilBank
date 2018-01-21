@@ -7,7 +7,7 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var infoMessage: UILabel!
@@ -16,11 +16,13 @@ class LoginViewController: UIViewController {
     
     let segueID = "login"
     let touchId = BiometricIDAuth()
-    let dummyInfoLabel = "Please enter your pin and press login or touch the fingerprint piture to login with Touch ID!"
+    let infoLabelForTouchId = "Please enter your pin and press login or touch the fingerprint piture to login with Touch ID!"
+    let infoLabelWithoutTouchId = "Please enter your pin and press login!"
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        passwordInput.delegate = self
         updateInfoMessage()
         touchIdLoginButton.isHidden = !touchId.canEvaluatePolicy()
     }
@@ -40,13 +42,31 @@ class LoginViewController: UIViewController {
     
     @IBAction func biometricLogin(_ sender: Any) {
         
-        touchId.authenticateUser() { [weak self] in
-            self?.performSegue(withIdentifier: (self?.segueID)!, sender: self)
+        touchId.authenticateUser() { [weak self] message in
+            
+            if let message = message {
+                let alertView = UIAlertController(title: "Error",
+                                                  message: message,
+                                                  preferredStyle: .alert)
+                let okAction = UIAlertAction(title: "Darn!", style: .default)
+                alertView.addAction(okAction)
+                self?.present(alertView, animated: true)
+
+            }
+            else {
+                self?.performSegue(withIdentifier: (self?.segueID)!, sender: self)
+            }
         }
     }
     
     func updateInfoMessage() {
-        infoMessage.text = dummyInfoLabel;
+        
+        if touchId.canEvaluatePolicy() {
+            infoMessage.text = infoLabelForTouchId
+        }
+        else {
+            infoMessage.text = infoLabelWithoutTouchId
+        }
     }
     
     func checkLogin(password: String) -> Bool {
@@ -69,6 +89,12 @@ class LoginViewController: UIViewController {
         let okAction = UIAlertAction(title: "Close", style: .default)
         alertView.addAction(okAction)
         present(alertView, animated: true)
+    }
+    
+    public func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        let allowedCharacters = CharacterSet.decimalDigits
+        let characterSet = CharacterSet(charactersIn: string)
+        return allowedCharacters.isSuperset(of: characterSet)
     }
 }
 

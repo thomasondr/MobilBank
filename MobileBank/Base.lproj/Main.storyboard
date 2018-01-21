@@ -211,7 +211,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Dh5-3O-Jgp">
-                                <rect key="frame" x="20" y="74" width="335" height="514"/>
+                                <rect key="frame" x="20" y="74" width="335" height="451"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="sectionIndexBackgroundColor" red="0.29204627869999999" green="0.65247046949999998" blue="0.49190118910000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
@@ -267,11 +267,35 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YBd-JN-4qC">
+                                <rect key="frame" x="127.5" y="565" width="120" height="33"/>
+                                <color key="backgroundColor" red="0.99160850050000005" green="0.58425903320000006" blue="0.42443481090000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="n6T-SM-Q5m"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
+                                <state key="normal" title="Log Out">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="activate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QPE-1w-qnf"/>
+                                    <action selector="activate:" destination="s1F-cu-GVQ" eventType="touchUpInside" id="XsS-0e-aZh"/>
+                                    <action selector="logOut:" destination="bGb-fH-CJb" eventType="touchUpInside" id="0J5-jX-901"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.29204627869999999" green="0.65247046949999998" blue="0.49190118910000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="E6D-ry-qER" firstAttribute="trailing" secondItem="Dh5-3O-Jgp" secondAttribute="trailing" constant="20" id="1GC-H0-P3l"/>
-                            <constraint firstItem="E6D-ry-qER" firstAttribute="bottom" secondItem="Dh5-3O-Jgp" secondAttribute="bottom" constant="30" id="E4u-j7-XQh"/>
+                            <constraint firstItem="E6D-ry-qER" firstAttribute="bottom" secondItem="YBd-JN-4qC" secondAttribute="bottom" constant="20" id="F6f-w3-S6o"/>
+                            <constraint firstItem="YBd-JN-4qC" firstAttribute="centerX" secondItem="db0-Yv-jtF" secondAttribute="centerX" id="JzL-BZ-m8h"/>
+                            <constraint firstItem="YBd-JN-4qC" firstAttribute="top" secondItem="Dh5-3O-Jgp" secondAttribute="bottom" constant="40" id="in3-ra-uZb"/>
                             <constraint firstItem="Dh5-3O-Jgp" firstAttribute="top" secondItem="E6D-ry-qER" secondAttribute="top" constant="10" id="naN-5S-ZLv"/>
                             <constraint firstItem="Dh5-3O-Jgp" firstAttribute="leading" secondItem="E6D-ry-qER" secondAttribute="leading" constant="20" id="tHf-Ls-2mV"/>
                         </constraints>
@@ -795,7 +819,7 @@
                                     <constraint firstAttribute="height" constant="30" id="4Pn-Hz-zqs"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" secureTextEntry="YES"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u0Z-la-8Pj">
                                 <rect key="frame" x="20" y="609" width="335" height="18"/>
@@ -956,7 +980,7 @@
                                     <constraint firstAttribute="width" constant="120" id="HEa-sD-02f"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9tn-8a-gHu">
                                 <rect key="frame" x="127" y="288.5" width="120" height="33"/>
