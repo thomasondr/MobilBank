@@ -12,6 +12,7 @@ class LoginViewController: UIViewController {
 
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var infoMessage: UILabel!
+    @IBOutlet weak var touchIdLoginButton: UIButton!
     
     let segueID = "login"
     let dummyInfoLabel = "Please enter your pin and press login or touch the fingerprint piture to login with Touch ID!"

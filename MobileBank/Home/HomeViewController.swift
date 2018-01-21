@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     let dummyAccountNo = "11774555-77967487"
     let dummycreditCardNo = "5321 4534 4566 8976"
@@ -26,12 +26,19 @@ class HomeViewController: UIViewController {
     
     @IBOutlet weak var transactionsView: UIView!
     @IBOutlet weak var transactionsTableView: UITableView!
+    let transactionsWidgetCellId = "transactionsWidgetCell"
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        transactionsTableView.delegate = self
+        transactionsTableView.dataSource = self
+        transactionsTableView.tableFooterView = UIView(frame: CGRect.zero)
 
         accountsOverview.layer.cornerRadius = accountsOverview.frame.height/8
         creditCardOverview.layer.cornerRadius = creditCardOverview.frame.height/8
+        transactionsView.layer.cornerRadius = transactionsView.frame.height/8
+        transactionsTableView.layer.cornerRadius = transactionsTableView.frame.height/8
         
         updateAccountOverview()
         updateCreditCardOverview()
@@ -58,6 +65,28 @@ class HomeViewController: UIViewController {
     }
 
     // MARK: Transactions functions
+    
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 3
+    }
+    
+    public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 60
+    }
+    
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = transactionsTableView.dequeueReusableCell(withIdentifier: transactionsWidgetCellId) as! TransactionsWidgetTableViewCell
+        
+        
+        cell.transactionName.text = "Bellozzo etterem"
+        cell.amount.text = "- 1455 HUF"
+        cell.date.text = "2016-08-25"
+        cell.transactionType.text = "Card payment"
+        
+        cell.layer.cornerRadius = cell.frame.height/4
+        
+        return cell
+    }
     
     // MARK: Cards functions
     func updateCardNumber() {
