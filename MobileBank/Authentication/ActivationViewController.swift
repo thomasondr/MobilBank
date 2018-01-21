@@ -39,11 +39,6 @@ class ActivationViewController: UIViewController {
                     //Print into the console if successfully logged in
                     print("You have successfully logged in")
                     
-                    // Store activation in NSUserDefaults
-                    
-                    let userDefaults = UserDefaults.standard
-                    userDefaults.set(true, forKey: "activated")
-                    userDefaults.synchronize()
                     
                     //Go to the PIN enter if the login is sucessful
                     self.performSegue(withIdentifier: self.segueID, sender: nil)

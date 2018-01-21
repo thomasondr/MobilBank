@@ -2,8 +2,7 @@
 //  AppDelegate.swift
 //  MobileBank
 //
-//  Created by Tamas Ondresik on 2018. 01. 18..
-//  Copyright © 2018. Tamas Ondresik. All rights reserved.
+//  Created by Tamas Ondresik
 //
 
 import UIKit
