@@ -3,10 +3,10 @@
 
 target 'MobileBank' do
   use_frameworks!
-  
+
   # Pods for MobileBank
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
-  pod 'SwiftKeychainWrapper'
+  pod 'Firebase/Database'
 
 end

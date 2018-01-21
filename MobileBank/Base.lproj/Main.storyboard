@@ -171,21 +171,62 @@
             </objects>
             <point key="canvasLocation" x="1632.8" y="481.70914542728639"/>
         </scene>
-        <!--Cards-->
+        <!--View Controller-->
         <scene sceneID="UEk-aS-e61">
             <objects>
                 <viewController id="YFk-Nc-f4z" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="f3W-mO-DBB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Hqo-p9-g3f">
+                                <rect key="frame" x="20" y="84" width="335" height="514"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="VQe-r6-ygS">
+                                        <rect key="frame" x="0.0" y="28" width="335" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VQe-r6-ygS" id="7uu-0k-XD9">
+                                            <rect key="frame" x="0.0" y="0.0" width="335" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" red="0.29204627869999999" green="0.65247046949999998" blue="0.49190118910000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Hqo-p9-g3f" firstAttribute="centerX" secondItem="f3W-mO-DBB" secondAttribute="centerX" id="8tD-9d-qO7"/>
+                            <constraint firstItem="Hqo-p9-g3f" firstAttribute="leading" secondItem="ATS-zm-gl0" secondAttribute="leading" constant="20" id="DlX-Gm-mbO"/>
+                            <constraint firstItem="ATS-zm-gl0" firstAttribute="trailing" secondItem="Hqo-p9-g3f" secondAttribute="trailing" constant="20" id="ahH-fl-uWi"/>
+                            <constraint firstItem="Hqo-p9-g3f" firstAttribute="top" secondItem="ATS-zm-gl0" secondAttribute="top" constant="20" id="jsa-gi-yjV"/>
+                            <constraint firstItem="ATS-zm-gl0" firstAttribute="bottom" secondItem="Hqo-p9-g3f" secondAttribute="bottom" constant="20" id="zJz-EC-Drr"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ATS-zm-gl0"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Cards" image="Cards" id="LVH-xW-zoB"/>
+                    <navigationItem key="navigationItem" id="KcC-Sd-Cnu"/>
+                    <connections>
+                        <segue destination="RS6-Rh-X86" kind="show" id="TrR-1m-aCL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SF3-9X-aLh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2441" y="482"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="FA1-Ou-ugR">
+            <objects>
+                <viewController id="RS6-Rh-X86" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OgC-h0-lTc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="Kb7-QY-QY7"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CAu-cO-9Ga" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2583" y="1200"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="yud-Vp-hpd">
@@ -200,7 +241,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nTb-yT-rU8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3238" y="482"/>
+            <point key="canvasLocation" x="6074" y="409"/>
         </scene>
         <!--Menu-->
         <scene sceneID="gSN-7J-5b3">
@@ -307,13 +348,11 @@
                         <segue destination="QP1-Bq-ly8" kind="show" identifier="Accounts" id="ChC-bN-WKh"/>
                         <segue destination="tJx-id-Oxb" kind="show" identifier="Transactions" id="G2k-GJ-e0K"/>
                         <segue destination="eaK-bK-WFZ" kind="show" identifier="Payment" id="aqz-gU-2Ci"/>
-                        <segue destination="16q-S7-61Z" kind="show" identifier="User" id="N1L-mU-t7y"/>
-                        <segue destination="iqN-nr-Iyr" kind="show" identifier="Contact" id="tdl-vY-vh0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ng1-ab-NFA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4052" y="133.5832083958021"/>
+            <point key="canvasLocation" x="4391.1999999999998" y="133.5832083958021"/>
         </scene>
         <!--Transactions-->
         <scene sceneID="JgF-nw-XaL">
@@ -328,37 +367,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2yU-c2-Ejw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5031.1999999999998" y="408.84557721139436"/>
-        </scene>
-        <!--User Details-->
-        <scene sceneID="3Uc-AF-D4Q">
-            <objects>
-                <viewController title="User Details" id="16q-S7-61Z" customClass="UserDetailsViewController" customModule="MobileBank" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Vf6-rD-acd">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.29204627869999999" green="0.65247046949999998" blue="0.49190118910000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="58X-4T-VpM"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="P3N-sT-nZP" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="5988" y="409"/>
-        </scene>
-        <!--Contact-->
-        <scene sceneID="r2F-3c-XNE">
-            <objects>
-                <viewController title="Contact" id="iqN-nr-Iyr" customClass="ContactViewController" customModule="MobileBank" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="sSY-Co-ZUi">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.29204627869999999" green="0.65247046949999998" blue="0.49190118910000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="Wbj-Gf-lBE"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="60G-Pv-aD8" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="6850" y="60"/>
+            <point key="canvasLocation" x="5370.3999999999996" y="408.84557721139436"/>
         </scene>
         <!--Accounts-->
         <scene sceneID="dNP-k5-tkC">
@@ -396,7 +405,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kRi-Zz-GmP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5031.1999999999998" y="-340.47976011994007"/>
+            <point key="canvasLocation" x="5370" y="-302"/>
         </scene>
         <!--Payments-->
         <scene sceneID="6aR-YC-F91">
@@ -411,7 +420,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VHy-nc-Zcd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5988" y="-340"/>
+            <point key="canvasLocation" x="6142" y="-962"/>
         </scene>
         <!--Home-->
         <scene sceneID="0T9-LJ-CuR">
@@ -905,7 +914,7 @@
                         <segue destination="MvX-DW-1Pi" kind="relationship" relationship="viewControllers" id="LlS-d7-JNu"/>
                         <segue destination="BYC-mz-SHU" kind="relationship" relationship="viewControllers" id="1Qr-vV-lHN"/>
                         <segue destination="mwi-9N-kOi" kind="relationship" relationship="viewControllers" id="WDH-JC-YOl"/>
-                        <segue destination="YFk-Nc-f4z" kind="relationship" relationship="viewControllers" id="7Eh-S8-PdG"/>
+                        <segue destination="OYi-wr-cHO" kind="relationship" relationship="viewControllers" id="7Eh-S8-PdG"/>
                         <segue destination="oLF-ng-7dX" kind="relationship" relationship="viewControllers" id="sFX-Y0-LrX"/>
                     </connections>
                 </tabBarController>
@@ -1035,6 +1044,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t9S-wx-wzq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="830" y="-635"/>
+        </scene>
+        <!--Cards-->
+        <scene sceneID="waa-Ll-Dhc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="OYi-wr-cHO" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Cards" image="Cards" id="LVH-xW-zoB"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="INy-6L-NZ9">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="YFk-Nc-f4z" kind="relationship" relationship="rootViewController" id="pCf-wf-nFC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qKK-bm-Ehu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1806" y="1200"/>
         </scene>
     </scenes>
     <resources>

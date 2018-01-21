@@ -9,7 +9,7 @@ import UIKit
 
 class MenuViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
-    let menuItems = ["Accounts", "Transactions", "Payment","User","Contact"]
+    let menuItems = ["Accounts", "Transactions", "Payment"]
     let rowHeight:CGFloat = 50
     let menuCellId = "menuCell"
     
