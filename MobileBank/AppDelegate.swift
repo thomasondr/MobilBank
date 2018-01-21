@@ -23,10 +23,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = UIWindow(frame: UIScreen.main.bounds)
         let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
 
-        let activationViewController: ActiovationViewController = mainStoryboard.instantiateViewController(withIdentifier: "ActiovationViewController") as! ActiovationViewController
+        let activationViewController: ActivationViewController = mainStoryboard.instantiateViewController(withIdentifier: "ActivationViewController") as! ActivationViewController
         let loginViewController: LoginViewController = mainStoryboard.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
         
-        let isActivated = true
+        let userDefaults = UserDefaults.standard
+        let isActivated = userDefaults.bool(forKey: "activated")
 
         if isActivated {
             self.window?.rootViewController = loginViewController

@@ -20,6 +20,7 @@
 		23433763201413E7008A539C /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23433762201413E7008A539C /* Currency.swift */; };
 		234337652014BDD3008A539C /* CurrencyListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234337642014BDD3008A539C /* CurrencyListTableViewCell.swift */; };
 		234337672014D09B008A539C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 234337662014D09B008A539C /* GoogleService-Info.plist */; };
+		234337692014D408008A539C /* EnterPinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234337682014D408008A539C /* EnterPinViewController.swift */; };
 		235A13B520101834009AC6CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235A13B420101834009AC6CF /* AppDelegate.swift */; };
 		235A13B720101834009AC6CF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235A13B620101834009AC6CF /* LoginViewController.swift */; };
 		235A13BA20101834009AC6CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 235A13B820101834009AC6CF /* Main.storyboard */; };
@@ -49,6 +50,7 @@
 		23433762201413E7008A539C /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 		234337642014BDD3008A539C /* CurrencyListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyListTableViewCell.swift; sourceTree = "<group>"; };
 		234337662014D09B008A539C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		234337682014D408008A539C /* EnterPinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterPinViewController.swift; sourceTree = "<group>"; };
 		235A13B120101834009AC6CF /* MobileBank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileBank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		235A13B420101834009AC6CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		235A13B620101834009AC6CF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 			children = (
 				235A13B620101834009AC6CF /* LoginViewController.swift */,
 				2343374F2013B691008A539C /* ActiovationViewController.swift */,
+				234337682014D408008A539C /* EnterPinViewController.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -385,6 +388,7 @@
 				234337562013E773008A539C /* UserDetailsViewController.swift in Sources */,
 				237A1ECF20114E0F00B3C06D /* MenuViewController.swift in Sources */,
 				235A13B520101834009AC6CF /* AppDelegate.swift in Sources */,
+				234337692014D408008A539C /* EnterPinViewController.swift in Sources */,
 				234337652014BDD3008A539C /* CurrencyListTableViewCell.swift in Sources */,
 				2343375A2013E78D008A539C /* PaymentsViewController.swift in Sources */,
 				234337582013E783008A539C /* AccountsViewController.swift in Sources */,
