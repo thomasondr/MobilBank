@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,13 +18,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
+        FIRApp.configure()
+        
         self.window = UIWindow(frame: UIScreen.main.bounds)
         let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
 
-        var activationViewController: ActiovationViewController = mainStoryboard.instantiateViewController(withIdentifier: "ActiovationViewController") as! ActiovationViewController
-        var loginViewController: LoginViewController = mainStoryboard.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+        let activationViewController: ActiovationViewController = mainStoryboard.instantiateViewController(withIdentifier: "ActiovationViewController") as! ActiovationViewController
+        let loginViewController: LoginViewController = mainStoryboard.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
         
-        var isActivated = true
+        let isActivated = true
 
         if isActivated {
             self.window?.rootViewController = loginViewController

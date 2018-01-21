@@ -17,6 +17,9 @@
 		2343375A2013E78D008A539C /* PaymentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234337592013E78D008A539C /* PaymentsViewController.swift */; };
 		2343375C2013E85D008A539C /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2343375B2013E85D008A539C /* ContactViewController.swift */; };
 		2343376020140F81008A539C /* CurrencyDownloadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2343375F20140F81008A539C /* CurrencyDownloadService.swift */; };
+		23433763201413E7008A539C /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23433762201413E7008A539C /* Currency.swift */; };
+		234337652014BDD3008A539C /* CurrencyListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234337642014BDD3008A539C /* CurrencyListTableViewCell.swift */; };
+		234337672014D09B008A539C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 234337662014D09B008A539C /* GoogleService-Info.plist */; };
 		235A13B520101834009AC6CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235A13B420101834009AC6CF /* AppDelegate.swift */; };
 		235A13B720101834009AC6CF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235A13B620101834009AC6CF /* LoginViewController.swift */; };
 		235A13BA20101834009AC6CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 235A13B820101834009AC6CF /* Main.storyboard */; };
@@ -29,6 +32,7 @@
 		237A1ED420117E6800B3C06D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 237A1ED320117E6800B3C06D /* CoreLocation.framework */; };
 		237A1ED92011836600B3C06D /* CurrencyListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237A1ED82011836600B3C06D /* CurrencyListViewController.swift */; };
 		237A1EDB201187F600B3C06D /* CurrencyCalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237A1EDA201187F600B3C06D /* CurrencyCalculatorViewController.swift */; };
+		5C357C036939CF0CE2A8771E /* Pods_MobileBank.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F26CEA943FD257619123506 /* Pods_MobileBank.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +46,9 @@
 		234337592013E78D008A539C /* PaymentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentsViewController.swift; sourceTree = "<group>"; };
 		2343375B2013E85D008A539C /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		2343375F20140F81008A539C /* CurrencyDownloadService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyDownloadService.swift; sourceTree = "<group>"; };
+		23433762201413E7008A539C /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		234337642014BDD3008A539C /* CurrencyListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyListTableViewCell.swift; sourceTree = "<group>"; };
+		234337662014D09B008A539C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		235A13B120101834009AC6CF /* MobileBank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileBank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		235A13B420101834009AC6CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		235A13B620101834009AC6CF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +63,9 @@
 		237A1ED320117E6800B3C06D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		237A1ED82011836600B3C06D /* CurrencyListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyListViewController.swift; sourceTree = "<group>"; };
 		237A1EDA201187F600B3C06D /* CurrencyCalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyCalculatorViewController.swift; sourceTree = "<group>"; };
+		69AAA126252849D6C080B592 /* Pods-MobileBank.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileBank.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MobileBank/Pods-MobileBank.debug.xcconfig"; sourceTree = "<group>"; };
+		7F26CEA943FD257619123506 /* Pods_MobileBank.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobileBank.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA0D423247D086D9396F9589 /* Pods-MobileBank.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileBank.release.xcconfig"; path = "Pods/Target Support Files/Pods-MobileBank/Pods-MobileBank.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +74,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				237A1ED420117E6800B3C06D /* CoreLocation.framework in Frameworks */,
+				5C357C036939CF0CE2A8771E /* Pods_MobileBank.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,12 +98,21 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		23433761201413BD008A539C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				23433762201413E7008A539C /* Currency.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		235A13A820101834009AC6CF = {
 			isa = PBXGroup;
 			children = (
 				235A13B320101834009AC6CF /* MobileBank */,
 				235A13B220101834009AC6CF /* Products */,
 				237A1ED220117E6700B3C06D /* Frameworks */,
+				8EABB711031FF98171D1BF81 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -124,6 +144,7 @@
 				235A13BE20101834009AC6CF /* Assets.xcassets */,
 				235A13C020101834009AC6CF /* LaunchScreen.storyboard */,
 				235A13C320101834009AC6CF /* Info.plist */,
+				234337662014D09B008A539C /* GoogleService-Info.plist */,
 				235A13BB20101834009AC6CF /* MobileBank.xcdatamodeld */,
 			);
 			path = MobileBank;
@@ -133,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				237A1ED320117E6800B3C06D /* CoreLocation.framework */,
+				7F26CEA943FD257619123506 /* Pods_MobileBank.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -157,8 +179,10 @@
 		237A1ED72011834500B3C06D /* Currencies */ = {
 			isa = PBXGroup;
 			children = (
+				23433761201413BD008A539C /* Model */,
 				237A1ED82011836600B3C06D /* CurrencyListViewController.swift */,
 				237A1EDA201187F600B3C06D /* CurrencyCalculatorViewController.swift */,
+				234337642014BDD3008A539C /* CurrencyListTableViewCell.swift */,
 			);
 			path = Currencies;
 			sourceTree = "<group>";
@@ -220,6 +244,15 @@
 			path = Contact;
 			sourceTree = "<group>";
 		};
+		8EABB711031FF98171D1BF81 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				69AAA126252849D6C080B592 /* Pods-MobileBank.debug.xcconfig */,
+				FA0D423247D086D9396F9589 /* Pods-MobileBank.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -227,9 +260,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 235A13C620101834009AC6CF /* Build configuration list for PBXNativeTarget "MobileBank" */;
 			buildPhases = (
+				BE5C8E1C853CA4DE3AD7A2EA /* [CP] Check Pods Manifest.lock */,
 				235A13AD20101834009AC6CF /* Sources */,
 				235A13AE20101834009AC6CF /* Frameworks */,
 				235A13AF20101834009AC6CF /* Resources */,
+				617EF851997D8D742F908FB5 /* [CP] Embed Pods Frameworks */,
+				F033C78EEF1CF957C6FBF909 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -280,12 +316,61 @@
 			buildActionMask = 2147483647;
 			files = (
 				235A13C220101834009AC6CF /* LaunchScreen.storyboard in Resources */,
+				234337672014D09B008A539C /* GoogleService-Info.plist in Resources */,
 				235A13BF20101834009AC6CF /* Assets.xcassets in Resources */,
 				235A13BA20101834009AC6CF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		617EF851997D8D742F908FB5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MobileBank/Pods-MobileBank-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE5C8E1C853CA4DE3AD7A2EA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F033C78EEF1CF957C6FBF909 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MobileBank/Pods-MobileBank-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		235A13AD20101834009AC6CF /* Sources */ = {
@@ -300,8 +385,10 @@
 				234337562013E773008A539C /* UserDetailsViewController.swift in Sources */,
 				237A1ECF20114E0F00B3C06D /* MenuViewController.swift in Sources */,
 				235A13B520101834009AC6CF /* AppDelegate.swift in Sources */,
+				234337652014BDD3008A539C /* CurrencyListTableViewCell.swift in Sources */,
 				2343375A2013E78D008A539C /* PaymentsViewController.swift in Sources */,
 				234337582013E783008A539C /* AccountsViewController.swift in Sources */,
+				23433763201413E7008A539C /* Currency.swift in Sources */,
 				2343376020140F81008A539C /* CurrencyDownloadService.swift in Sources */,
 				237A1ECD20114DF000B3C06D /* MenuTableViewCell.swift in Sources */,
 				234337542013E762008A539C /* CardsViewController.swift in Sources */,
@@ -444,6 +531,7 @@
 		};
 		235A13C720101834009AC6CF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69AAA126252849D6C080B592 /* Pods-MobileBank.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -462,6 +550,7 @@
 		};
 		235A13C820101834009AC6CF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA0D423247D086D9396F9589 /* Pods-MobileBank.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
