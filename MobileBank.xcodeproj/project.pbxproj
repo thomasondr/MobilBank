@@ -14,7 +14,6 @@
 		234337542013E762008A539C /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234337532013E762008A539C /* CardsViewController.swift */; };
 		234337582013E783008A539C /* AccountsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234337572013E783008A539C /* AccountsViewController.swift */; };
 		2343375A2013E78D008A539C /* PaymentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234337592013E78D008A539C /* PaymentsViewController.swift */; };
-		2343375C2013E85D008A539C /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2343375B2013E85D008A539C /* ContactViewController.swift */; };
 		2343376020140F81008A539C /* CurrencyDownloadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2343375F20140F81008A539C /* CurrencyDownloadService.swift */; };
 		23433763201413E7008A539C /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23433762201413E7008A539C /* Currency.swift */; };
 		234337652014BDD3008A539C /* CurrencyListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234337642014BDD3008A539C /* CurrencyListTableViewCell.swift */; };
@@ -52,7 +51,6 @@
 		234337532013E762008A539C /* CardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
 		234337572013E783008A539C /* AccountsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsViewController.swift; sourceTree = "<group>"; };
 		234337592013E78D008A539C /* PaymentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentsViewController.swift; sourceTree = "<group>"; };
-		2343375B2013E85D008A539C /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		2343375F20140F81008A539C /* CurrencyDownloadService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyDownloadService.swift; sourceTree = "<group>"; };
 		23433762201413E7008A539C /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 		234337642014BDD3008A539C /* CurrencyListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyListTableViewCell.swift; sourceTree = "<group>"; };
@@ -166,7 +164,6 @@
 			children = (
 				2343375D20140F58008A539C /* Services */,
 				2343374E2013B664008A539C /* Authentication */,
-				237A1EE220118EA600B3C06D /* Contact */,
 				237A1EE120118E9400B3C06D /* Transactions */,
 				237A1EE020118E5B00B3C06D /* Cards */,
 				237A1EDF20118E5000B3C06D /* Home */,
@@ -269,14 +266,6 @@
 				2343377920150EF3008A539C /* TransactionDetailsViewController.swift */,
 			);
 			path = Transactions;
-			sourceTree = "<group>";
-		};
-		237A1EE220118EA600B3C06D /* Contact */ = {
-			isa = PBXGroup;
-			children = (
-				2343375B2013E85D008A539C /* ContactViewController.swift */,
-			);
-			path = Contact;
 			sourceTree = "<group>";
 		};
 		8EABB711031FF98171D1BF81 /* Pods */ = {
@@ -417,7 +406,6 @@
 				237A1ED92011836600B3C06D /* CurrencyListViewController.swift in Sources */,
 				234337702014F172008A539C /* Transaction.swift in Sources */,
 				234337522013E758008A539C /* TransactionsViewController.swift in Sources */,
-				2343375C2013E85D008A539C /* ContactViewController.swift in Sources */,
 				2343374D201380E3008A539C /* TransactionsWidgetTableViewCell.swift in Sources */,
 				237A1ECF20114E0F00B3C06D /* MenuViewController.swift in Sources */,
 				235A13B520101834009AC6CF /* AppDelegate.swift in Sources */,

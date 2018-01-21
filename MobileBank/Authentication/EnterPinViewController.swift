@@ -43,12 +43,10 @@ class EnterPinViewController: UIViewController, UITextFieldDelegate {
         let newPin = pinInput.text!
         
         do {
-            // This is a new account, create a new keychain item with the account name.
             let passwordItem = KeychainPasswordItem(service: KeychainConfiguration.serviceName,
                                                     account: credentialType,
                                                     accessGroup: KeychainConfiguration.accessGroup)
             
-            // Save the password for the new item.
             try passwordItem.savePassword(newPin)
             
             // Store activation in NSUserDefaults

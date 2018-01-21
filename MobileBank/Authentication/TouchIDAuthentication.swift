@@ -41,13 +41,13 @@ class BiometricIDAuth {
                                     case LAError.userFallback?:
                                         message = "You pressed password."
                                     case LAError.biometryNotAvailable?:
-                                        message = "Face ID/Touch ID is not available."
+                                        message = "Touch ID is not available."
                                     case LAError.biometryNotEnrolled?:
-                                        message = "Face ID/Touch ID is not set up."
+                                        message = "Touch ID is not set up."
                                     case LAError.biometryLockout?:
-                                        message = "Face ID/Touch ID is locked."
+                                        message = "Touch ID is locked."
                                     default:
-                                        message = "Face ID/Touch ID may not be configured"
+                                        message = "Touch ID may not be configured"
                                     }
                                     
                                     completion(message)
