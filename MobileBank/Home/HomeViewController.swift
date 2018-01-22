@@ -13,9 +13,9 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     let dummycreditCardNo = "5321 4534 4566 8976"
     
     var transactionList:[Transaction] = []
-    let transaction1 = Transaction(id: 12, name: "McDonalds etterem", source: "11755377-77623827", target: "11736254-87648364", amount: -1345.50, user: 100, date: "2016-11-15", currency:"HUF", type:"Card payment")
-    let transaction2 = Transaction(id: 13, name: "Tankolas OMV", source: "11755377-77623827", target: "13536254-74473975-87648364", amount: -12000, user: 100, date: "2016-11-08", currency:"HUF", type:"Card payment")
-    let transaction3 = Transaction(id: 15, name: "Csoportos beszedes", source: "11755377-77623827", target: "13532454-43573975-87625164", amount: -6650, user: 100, date: "2016-11-04", currency:"HUF", type:"Bank Transfer")
+    let transaction1 = Transaction(id: 12, name: "McDonalds etterem", source: "11755377-77623827", target: "11736254-87648364", amount: -1345.50, user: "John Smith", date: "2016-11-15", currency:"HUF", type:"Card payment")
+    let transaction2 = Transaction(id: 13, name: "Tankolas OMV", source: "11755377-77623827", target: "13536254-74473975-87648364", amount: -12000, user: "John Smith", date: "2016-11-08", currency:"HUF", type:"Card payment")
+    let transaction3 = Transaction(id: 15, name: "Csoportos beszedes", source: "11755377-77623827", target: "13532454-43573975-87625164", amount: -6650, user: "John Smith", date: "2016-11-04", currency:"HUF", type:"Bank Transfer")
     
     @IBOutlet weak var accountsOverview: UIView!
     @IBOutlet weak var accountNoLbl: UILabel!

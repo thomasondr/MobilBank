@@ -9,6 +9,9 @@ import UIKit
 
 class AccountOverviewTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var accountNumber: UILabel!
+    @IBOutlet weak var accountType: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
