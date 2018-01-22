@@ -12,5 +12,13 @@ struct Account {
     var accountNumber:String
     var accountBalance:Double
     var isPrimary:Bool
+    var openingDate: String
     
+    init(custID: Int, number: String, balance: Double, primary: Bool, date: String) {
+        self.customerId = custID
+        self.accountNumber = number
+        self.accountBalance = balance
+        self.isPrimary = primary
+        self.openingDate = date
+    }
 }

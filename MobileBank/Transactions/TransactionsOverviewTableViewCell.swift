@@ -1,15 +1,19 @@
 //
-//  CardOverviewTableViewCell.swift
+//  TransactionsOverviewTableViewCell.swift
 //  MobileBank
 //
-//  Created by Tamas Ondresik on 2018. 01. 21..
-//  Copyright © 2018. Tamas Ondresik. All rights reserved.
+//  Created by Tamas Ondresik
 //
 
 import UIKit
 
-class CardOverviewTableViewCell: UITableViewCell {
+class TransactionsOverviewTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var transactionId: UILabel!
+    @IBOutlet weak var date: UILabel!
+    @IBOutlet weak var transactionType: UILabel!
+    @IBOutlet weak var amount: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

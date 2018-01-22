@@ -67,6 +67,12 @@ class CurrencyListViewController: UIViewController,UITableViewDelegate,UITableVi
         return cell
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+    {
+        let currencyCalculator = segue.destination as! CurrencyCalculatorViewController
+        currencyCalculator.currencyList = self.currencyList
+    }
+    
     @IBAction func navigateToCalculator(_ sender: Any) {
         performSegue(withIdentifier: calculatorScreenId, sender: self)
     }
